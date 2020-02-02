@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -latc | grep -v '*/' | head -n 10
+ls -t| head
