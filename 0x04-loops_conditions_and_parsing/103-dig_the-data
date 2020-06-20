@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+# prints apache ip
+
+awk '{ printf "%s %s\n", $1, $9 }' "apache-access.log" | sort | uniq -c | sort -nr
