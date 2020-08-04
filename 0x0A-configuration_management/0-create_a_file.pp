@@ -1,7 +1,7 @@
 # Create a file in /tmp
 
 file { '/tmp/holberton':
-  ensuere =>file,
+  ensure  =>file,
   path    =>'/tmp/holberton',
   mode    =>'0744',
   owner   =>'www-data',
