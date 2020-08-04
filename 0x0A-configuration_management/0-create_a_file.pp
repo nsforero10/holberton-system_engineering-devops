@@ -3,7 +3,7 @@
 file { '/tmp/holberton':
   ensuere =>file,
   path    =>'/tmp/holberton',
-  mode    =>'0774',
+  mode    =>'0744',
   owner   =>'www-data',
   group   =>'www-data',
   content =>'I love Puppet'

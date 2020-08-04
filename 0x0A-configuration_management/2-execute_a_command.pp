@@ -1,6 +1,7 @@
-# kills the suicide process
+# Kills the suicide process
 
 exec { 'pkill killmenow':
-  path    => '/user/bin/',
+  path    => '/usr/bin/',
   command => 'pkill -x killmenow',
 }
+
