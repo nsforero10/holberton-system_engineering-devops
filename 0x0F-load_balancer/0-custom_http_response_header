@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Set up NGINX server with custom http header
 sudo apt-get update
-sudo apt- get -y install nginx
-sudo sed -i "31i\ $\t\tadd_header X-Server-By '$HOSTNAME';"
+sudo apt-get -y install nginx
+sudo sed -i "31i\ $\t\tadd_header X-Server-By '$HOSTNAME';" /etc/nginx/sites-enabled/default
 sudo service nginx start
